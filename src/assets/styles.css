@@ -1,22 +1,202 @@
+/* =====================================================
+   Rafik BELHADJINE — CV en ligne
+   Couleurs : Teal #1a8a8a + Violet #6b35b8 + Dark header
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
 :root {
-    --bs-font-sans-serif: Roboto, sans-serif;
+    --bs-font-sans-serif: 'DM Sans', 'Roboto', sans-serif;
     --bs-body-font-weight: 400;
-    --bs-body-color: #858585;
-    --bs-body-color-rgb: 133, 133, 133;
-    --light-color: #D9D9D9;
-    --dark-color: #7a7a7a;
-    --bs-body-font-size: 1.2rem;
+    --bs-body-color: #333333;
+    --bs-body-color-rgb: 51, 51, 51;
+    --light-color: #c8e6e6;
+    --dark-color: #1a8a8a;
+    --bs-primary: #1a8a8a;
+    --bs-body-font-size: 1.05rem;
+    --accent-gradient: linear-gradient(135deg, #1a8a8a, #6b35b8);
 }
 
-a {
-    word-break: break-word;
+/* === TYPOGRAPHIE === */
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #1a8a8a !important;
+    border-bottom: 2px solid #1a8a8a;
+    padding-bottom: 0.3rem;
+}
+
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #1a1a2e !important;
+}
+
+h4 {
+    color: #6b35b8 !important;
+    font-weight: 500;
+}
+
+/* === HEADER — DARK BACKGROUND === */
+.header-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #1a2a4a 100%) !important;
+    border-radius: 8px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Nom dans le header */
+.header-section h1 {
+    color: #ffffff !important;
+}
+
+/* Titre sous le nom (fs-3) */
+.header-section .fs-3 {
+    color: #a0c4c4 !important;
+    font-size: 1rem !important;
+}
+
+/* Liens et texte dans le header */
+.header-section p,
+.header-section .small,
+.header-section a {
+    color: #7fb8b8 !important;
+}
+
+/* Facts dans le header */
+.header-section .list-group-item {
+    background: transparent !important;
+    border-color: rgba(255,255,255,0.1) !important;
+    color: #c8e6e6;
+}
+
+.header-section .list-group-item .text-nowrap:first-child {
+    color: #7fb8b8;
+    font-size: 0.85rem;
+}
+
+/* === BARRE DE GRADIENT SOUS LE NOM === */
+.header-accent {
+    height: 3px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* === FACTS (contacts) === */
+.fact-icon {
+    width: 1em;
+    color: #1a8a8a;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+dt {
+    color: #6b35b8;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+dd a {
+    color: #1a8a8a !important;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
-h1, h2, h3, h4 {
-    color: #000000;
+dd a:hover {
+    color: #6b35b8 !important;
 }
 
+/* === SKILLS BARS === */
+.skills {
+    flex: 1;
+    height: 6px;
+    background: #cce5e5;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skills-bar {
+    height: 100%;
+    background: linear-gradient(to right, #1a8a8a, #2aa8a8);
+    border-radius: 3px;
+}
+
+/* === SOFT SKILLS GRID === */
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem 2rem;
+}
+
+.soft-skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.soft-skill-item small {
+    min-width: 140px;
+    text-align: right;
+    font-size: 0.82rem;
+    color: #444;
+}
+
+/* === BADGES (skill tags) === */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    background-color: rgba(26, 138, 138, 0.12) !important;
+    color: #1a8a8a !important;
+    border: 1px solid rgba(26, 138, 138, 0.3);
+    border-radius: 4px;
+}
+
+/* === LINKS === */
+a {
+    color: #1a8a8a;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+a:hover {
+    color: #6b35b8;
+    text-decoration: underline;
+}
+
+/* === CARDS === */
+.card {
+    border: none !important;
+    border-left: 3px solid #1a8a8a !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 6px rgba(26, 138, 138, 0.08);
+    margin-bottom: 1rem;
+}
+
+/* === PERIOD (dates) === */
+.text-muted {
+    color: #6b35b8 !important;
+    font-weight: 500;
+}
+
+/* === BODY === */
+body {
+    background-color: #f8fafa;
+    color: #333;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* === PRINT === */
 @media print {
     :root {
         --bs-body-color: #000;
@@ -24,6 +204,7 @@ h1, h2, h3, h4 {
 
     body {
         font-size: 0.7rem;
+        background: white;
     }
 
     a {
@@ -39,7 +220,8 @@ h1, h2, h3, h4 {
     }
 
     .card {
-        border: none;
+        border: none !important;
+        border-left: 2px solid #1a8a8a !important;
     }
 
     .card-body {
@@ -47,59 +229,15 @@ h1, h2, h3, h4 {
     }
 
     .badge {
-        border: 0.07rem solid #868e96;
-        color: inherit;
-        background-color: inherit;
-    }
-
-    .print-url {
-        color: #deeef9;
-        text-decoration: none;
-        font-size: smaller;
-    }
-
-    .text-print-right {
-        text-align: right;
-    }
-}
-
-@media not print {
-    .page {
-        padding: 2rem;
-    }
-
-    .print {
-        display: none;
+        border: 0.07rem solid #1a8a8a;
+        color: #1a8a8a !important;
+        background-color: transparent !important;
     }
 
     h2 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        color: #1a8a8a !important;
     }
 
-    dt {
-        font-weight: normal;
-    }
-
-    strong {
-        font-weight: 500;
-    }
-}
-
-.far,
-.fab,
-.fas,
-.fa {
-    text-decoration: none !important;
-    margin-right: 5px;
-}
-
-.badge {
-    font-weight: normal;
-    letter-spacing: 0.05rem;
-}
-
-@media print {
     .col-print-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
@@ -123,38 +261,31 @@ h1, h2, h3, h4 {
     }
 }
 
-.fact-icon {
-    width: 1em;
-    color: var(--dark-color);
-    margin-right: 0.5rem;
+@media not print {
+    .page {
+        padding: 2rem;
+    }
+
+    .print {
+        display: none;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    dt {
+        font-weight: 600;
+    }
+
+    strong {
+        font-weight: 600;
+        color: #1a1a2e;
+    }
 }
 
 @page {
     size: auto;
     margin: 10mm;
-}
-
-.skills {
-    position: relative;
-    display: inline-block;
-    font-size: 1.2rem;
-}
-
-.skills::after {
-    display: block;
-    content: '•••••';
-    color: var(--light-color);
-}
-
-.skills-bar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-}
-
-.skills-bar::after {
-    display: block;
-    content: '•••••';
-    color: var(--bs-primary);
 }
