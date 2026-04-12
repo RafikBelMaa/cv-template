@@ -24,7 +24,7 @@
                 </div>
                 <div>
                     <p>
-                        <time datetime="" class="small">Last update: April 8, 2026</time>
+                        <time datetime="" class="small">Last update: April 13, 2026</time>
                     </p>
                     <p>
                         <span class="screen"><a href="rafik-belhadjine.developpeur-back-end-php-symfony-laravel.pdf"><i class="far fa-file-pdf"></i>Download PDF version</a></span>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="soft-skill-item">
-                <small>JavaScript ES6+</small>
+                <small>JavaScript / jQuery</small>
                 <div class="skills">
                     <div class="skills-bar" style="width: 75%"></div>
                 </div>
@@ -140,11 +140,10 @@
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <p>Développeur back-end PHP/Symfony en reconversion réussie, passionné par la qualité logicielle et l&#39;apprentissage continu.
-Après un Titre Pro Développeur Web à l&#39;AFPA, j&#39;ai investi personnellement dans le <strong>Coding Accelerator</strong> — une formation intensive centrée sur les algorithmes avancés, le Clean Code et la revue de code.</p>
+        <p>Développeur back-end PHP/Symfony/Laravel en reconversion réussie, avec une appétence forte pour comprendre ce qui se passe <strong>en dessous</strong> de chaque abstraction.
+Après un Titre Pro à l&#39;AFPA, j&#39;ai autofinancé le <strong>Coding Accelerator</strong> — 56 exercices PHP sans fonctions natives (QuickSort, DFS, Shunting Yard, Newton-Raphson) — parce que la certification seule ne suffisait pas.</p>
 
-<p><strong>56 exercices PHP documentés sur GitHub</strong> (DFS/backtracking, Newton-Raphson, Shunting Yard, QuickSort...) — c&#39;est mon engagement concret envers la rigueur technique.
-Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. Disponible immédiatement.</p>
+<p>7 projets construits de zéro : e-commerce, réservation, temps réel, mobile, VPS. Profil multidisciplinaire, anglais B2/C1. <strong>Disponible immédiatement.</strong></p>
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
@@ -154,16 +153,13 @@ Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. Disponible immédiatement
                 2025 – présent
             </div>
             <div class="col-md-10">
-                <h3 class="fs-4 fw-normal">Coding Accelerator — Formation intensive PHP/Bash</h3>
+                <h3 class="fs-4 fw-normal">Coding Accelerator — Formation intensive PHP / Bash</h3>
 
                 <div><p>Formation avancée centrée sur les algorithmes, l&#39;optimisation et la revue de code.</p>
 
-<p><strong>56 exercices progressifs PHP + Bash</strong> implémentés sans librairies natives :
-- <strong>DFS / Backtracking</strong> — Solveur de Sudoku
-- <strong>Newton-Raphson</strong> — Calcul de racine carrée
-- <strong>Shunting Yard</strong> — Calculatrice avec priorité d&#39;opérateurs et parenthèses
-- <strong>QuickSort, Merge Sort, Bubble Sort</strong> — Algorithmes de tri
-- <strong>Fibonacci, Nombres premiers, Pattern matching 2D, Tokenizers, Closures PHP</strong></p>
+<p><strong>56 exercices progressifs (séries Terre → Eau → Air → Feu)</strong> avec une contrainte stricte : aucune fonction native PHP autorisée. Tout est implémenté à la main pour comprendre ce qui se passe en dessous :</p>
+
+<ul><li><strong>DFS / Backtracking</strong> — Solveur de Sudoku</li><li><strong>Newton-Raphson</strong> — Calcul de racine carrée sans <code>sqrt()</code></li><li><strong>Shunting Yard</strong> — Calculatrice avec priorité d&#39;opérateurs et parenthèses</li><li><strong>QuickSort, Merge Sort, Bubble Sort, Selection Sort</strong> — Algorithmes de tri</li><li><strong>Fibonacci itératif, Nombres premiers, Pattern matching 2D avec wildcards</strong></li><li><strong>Tokenizer de chaînes, Closures PHP, Fonctions d&#39;ordre supérieur</strong></li><li><strong>Bash</strong> : tableaux, boucles, parsing CLI, substitution de chaînes, fonctions</li></ul>
 
 <p>Code structuré en modules (Utilitaire / Erreurs / Parsing / Résolution), docblocks complets, validation stricte des entrées CLI.</p>
 
@@ -177,6 +173,30 @@ Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. Disponible immédiatement
                 </p>
             </div>
         </div>
+        <div class="row d-block d-md-flex mb-5">
+            <div class="col-md-2 pt-1">
+                2024 – 2025
+            </div>
+            <div class="col-md-10">
+                <h3 class="fs-4 fw-normal">Stage — Développeur Web (Association)</h3>
+
+                <div><p>Stage réalisé dans le cadre du Titre Pro AFPA. Site Symfony en production, <strong>aucune documentation disponible</strong> — analyse de l&#39;architecture existante avant toute modification.</p>
+
+<p><strong>Mission :</strong> implémenter from scratch une messagerie instantanée entre utilisateurs (envoi et réception sans rechargement de page) via <strong>Mercure (protocole SSE)</strong>.</p>
+
+<p><strong>Défi résolu :</strong> blocage sur la configuration des tokens JWT Mercure — désalignement entre le secret du hub et celui de l&#39;app Symfony, claims de topics mal formés côté subscriber. Résolu en auditant les tokens publisher et subscriber et en recalibrant leur configuration.</p>
+
+<ul><li>Configuration du hub Mercure, publication depuis le contrôleur Symfony</li><li>Abonnement côté client en JavaScript natif</li><li>Contribution sur une base de code inconnue sans filet</li></ul></div>
+
+                <p>
+                    <span class="badge text-body border border-1">Symfony</span>
+                    <span class="badge text-body border border-1">Mercure</span>
+                    <span class="badge text-body border border-1">SSE</span>
+                    <span class="badge text-body border border-1">JWT</span>
+                    <span class="badge text-body border border-1">JavaScript</span>
+                </p>
+            </div>
+        </div>
         <div class="row d-block d-md-flex">
             <div class="col-md-2 pt-1">
                 2024 – 2025
@@ -184,9 +204,9 @@ Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. Disponible immédiatement
             <div class="col-md-10">
                 <h3 class="fs-4 fw-normal">AFPA — Titre Professionnel Développeur Web et Web Mobile</h3>
 
-                <div><p>Formation complète avec projets pratiques de bout en bout :</p>
+                <div><p>Formation certifiante complète avec projets pratiques de bout en bout.</p>
 
-<ul><li><strong>Symfony + Mercure</strong> — Refactorisation d&#39;un site associatif avec notifications temps réel (SSE), architecture services/events, SOLID</li><li><strong>E-commerce Sylius/Symfony</strong> — Boutique modulaire, thème custom, pipeline de commande complet</li><li><strong>E-commerce Laravel/MySQL</strong> — Catalogue, panier, tunnel de commande, tests PHPUnit sur les cas critiques</li><li><strong>Plateforme de réservation PHP</strong> — Gestion des créneaux, inscriptions, confirmations email automatisées</li><li><strong>Outil collaboratif Laravel</strong> — Gestion de tâches et projets, rôles utilisateurs, notifications</li><li><strong>Site vitrine WordPress</strong> — Thème PHP entièrement custom, hooks, shortcodes, responsive</li></ul></div>
+<ul><li><strong>E-commerce Laravel/MySQL</strong> — Catalogue, panier persistant inter-sessions (middleware de fusion au login), tunnel de commande, tests PHPUnit</li><li><strong>Plateforme de réservation PHP/MySQL</strong> — Créneaux, inscriptions, confirmations email (PHPMailer + tokens), verrou <code>SELECT FOR UPDATE</code> anti-doublon</li><li><strong>Outil collaboratif Laravel</strong> — Gestion de tâches, rôles admin/membre, notifications scoped par projet via Eloquent</li><li><strong>Site vitrine WordPress</strong> — Thème enfant, Custom Post Types, blocs Gutenberg sur mesure</li><li><strong>Site associatif Symfony</strong> — Refactorisation controllers monolithiques (400+ lignes), extraction vers services, pattern Repository</li></ul></div>
 
                 <p>
                     <span class="badge text-body border border-1">PHP</span>
@@ -206,15 +226,25 @@ Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. Disponible immédiatement
         <div class="mb-4">
             <h3 class="fs-4 fw-normal">Projets personnels en cours</h3>
 
-            <p>En parallèle de mes formations, je développe des projets pour explorer de nouvelles compétences :</p>
+            <p><strong>E-commerce multi-canaux (Sylius / Symfony / MySQL)</strong> <em>(en cours)</em>
+Catalogue produit avec variantes, gestion multi-canaux, gateway de paiement sandbox. Défi : personnaliser les entités sans toucher au core Sylius. Solution : substitution d&#39;entités + configuration Doctrine.</p>
 
-<ul><li><strong>Sylius</strong> — Approfondissement du framework e-commerce Symfony</li><li><strong>Application PHP natif</strong> — Architecture sans framework pour comprendre les fondamentaux</li><li><strong>SEO technique</strong> — Optimisation on-page, performance web, structured data</li><li><strong>Automatisation</strong> — Scripts bash, workflows automatisés, outils CLI</li></ul>
+<p><strong>Application mobile — Optimisation de tournées (NativePHP / Laravel)</strong> <em>(en cours)</em>
+App iOS/Android pour techniciens de terrain : chargement d&#39;un listing de chantiers et génération d&#39;un itinéraire optimisé. Défi : calcul sans API externe (hors connexion). Solution : algorithme du plus proche voisin (nearest neighbor) côté Laravel.
+<a href="https://github.com/RafikBelMaa">GitHub</a></p>
+
+<p><strong>Application mobile — Événements entre utilisateurs (NativePHP / Laravel — iOS)</strong> <em>(phase de conception)</em>
+Application iOS permettant de créer et rejoindre des événements. Deuxième projet NativePHP, exploration des interactions sociales (invitations, participants, notifications).</p>
+
+<p><strong>Landing pages + réservation en ligne (Astro / EasyAppointments / VPS)</strong>
+Pages vitrine statiques (SSG/SSR) avec intégration d&#39;EasyAppointments (PHP open source) hébergé sur VPS. Configuration serveur : Nginx, PHP-FPM, MySQL, SSL, DNS. Intégration du widget de réservation en iframe sécurisée dans les pages Astro.</p>
 
             <div>
                 <span class="badge text-body border border-1">Sylius</span>
-                <span class="badge text-body border border-1">PHP natif</span>
-                <span class="badge text-body border border-1">SEO</span>
-                <span class="badge text-body border border-1">Automatisation</span>
+                <span class="badge text-body border border-1">NativePHP</span>
+                <span class="badge text-body border border-1">Laravel</span>
+                <span class="badge text-body border border-1">Astro</span>
+                <span class="badge text-body border border-1">VPS</span>
             </div>
         </div>
         <div class="mb-4">
