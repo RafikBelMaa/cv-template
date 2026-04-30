@@ -1,291 +1,219 @@
-/* =====================================================
-   Rafik BELHADJINE — CV en ligne
-   Couleurs : Teal #1a8a8a + Violet #6b35b8 + Dark header
-   ===================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+/* Rafik BELHADJINE — CV en ligne
+   Design : monochrome #1a1a1a + gris, 2 colonnes
+   Correspond au cv-template.html du career-ops */
 
 :root {
-    --bs-font-sans-serif: 'DM Sans', 'Roboto', sans-serif;
-    --bs-body-font-weight: 400;
-    --bs-body-color: #333333;
-    --bs-body-color-rgb: 51, 51, 51;
-    --light-color: #c8e6e6;
-    --dark-color: #1a8a8a;
-    --bs-primary: #1a8a8a;
-    --bs-body-font-size: 1.05rem;
-    --accent-gradient: linear-gradient(135deg, #1a8a8a, #6b35b8);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --ink:          #1a1a1a;
+  --muted:        #555;
+  --subtle:       #888;
+  --bg:           #ffffff;
+  --tag-bg:       #f0f0f0;
+  --tag-border:   #ddd;
+  --bar-bg:       #e0e0e0;
+  --bar-fill:     #1a1a1a;
 }
 
-/* === TYPOGRAPHIE === */
-h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
-h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    color: #1a8a8a !important;
-    border-bottom: 2px solid #1a8a8a;
-    padding-bottom: 0.3rem;
-}
-
-h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    color: #1a1a2e !important;
-}
-
-h4 {
-    color: #6b35b8 !important;
-    font-weight: 500;
-}
-
-/* === HEADER — DARK BACKGROUND === */
-.header-section {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #1a2a4a 100%) !important;
-    border-radius: 8px !important;
-    padding: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-/* Nom dans le header */
-.header-section h1 {
-    color: #ffffff !important;
-}
-
-/* Titre sous le nom (fs-3) */
-.header-section .fs-3 {
-    color: #a0c4c4 !important;
-    font-size: 1rem !important;
-}
-
-/* Liens et texte dans le header */
-.header-section p,
-.header-section .small,
-.header-section a {
-    color: #7fb8b8 !important;
-}
-
-/* Facts dans le header */
-.header-section .list-group-item {
-    background: transparent !important;
-    border-color: rgba(255,255,255,0.1) !important;
-    color: #c8e6e6;
-}
-
-.header-section .list-group-item .text-nowrap:first-child {
-    color: #7fb8b8;
-    font-size: 0.85rem;
-}
-
-/* === BARRE DE GRADIENT SOUS LE NOM === */
-.header-accent {
-    height: 3px;
-    background: var(--accent-gradient);
-    border-radius: 2px;
-    margin: 0.5rem 0 1rem 0;
-}
-
-/* === FACTS (contacts) === */
-.fact-icon {
-    width: 1em;
-    color: #1a8a8a;
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
-}
-
-dt {
-    color: #6b35b8;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-dd a {
-    color: #1a8a8a !important;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-dd a:hover {
-    color: #6b35b8 !important;
-}
-
-/* === SKILLS BARS === */
-.skills {
-    flex: 1;
-    height: 6px;
-    background: #cce5e5;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.skills-bar {
-    height: 100%;
-    background: linear-gradient(to right, #1a8a8a, #2aa8a8);
-    border-radius: 3px;
-}
-
-/* === SOFT SKILLS GRID === */
-.soft-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem 2rem;
-}
-
-.soft-skill-item {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.soft-skill-item small {
-    min-width: 140px;
-    text-align: right;
-    font-size: 0.82rem;
-    color: #444;
-}
-
-/* === BADGES (skill tags) === */
-.badge {
-    font-weight: 500;
-    letter-spacing: 0.04rem;
-    background-color: rgba(26, 138, 138, 0.12) !important;
-    color: #1a8a8a !important;
-    border: 1px solid rgba(26, 138, 138, 0.3);
-    border-radius: 4px;
-}
-
-/* === LINKS === */
-a {
-    color: #1a8a8a;
-    text-decoration: none;
-    word-break: break-word;
-}
-
-a:hover {
-    color: #6b35b8;
-    text-decoration: underline;
-}
-
-/* === CARDS === */
-.card {
-    border: none !important;
-    border-left: 3px solid #1a8a8a !important;
-    border-radius: 6px !important;
-    box-shadow: 0 1px 6px rgba(26, 138, 138, 0.08);
-    margin-bottom: 1rem;
-}
-
-/* === PERIOD (dates) === */
-.text-muted {
-    color: #6b35b8 !important;
-    font-weight: 500;
-}
-
-/* === BODY === */
 body {
-    background-color: #f8fafa;
-    color: #333;
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
 }
 
+/* ===== PAGE ===== */
 .page {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2.2rem;
 }
 
-/* === PRINT === */
+/* ===== HEADER ===== */
+.header {
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.header h1 {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.header-role {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.contact-row a { color: var(--muted); text-decoration: none; }
+.contact-row a:hover { color: var(--ink); text-decoration: underline; }
+
+/* ===== LAYOUT ===== */
+.body-columns {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.col-main { flex: 1 1 0; min-width: 0; }
+.col-side  { width: 210px; flex-shrink: 0; }
+
+/* ===== SECTIONS ===== */
+.section { margin-bottom: 20px; }
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+/* ===== SUMMARY ===== */
+.summary-text { font-size: 11px; line-height: 1.7; color: #333; }
+.summary-text p { margin-bottom: 6px; }
+.summary-text strong { font-weight: 600; color: var(--ink); }
+.summary-text a { color: var(--ink); text-decoration: underline; }
+.summary-text a:hover { opacity: 0.7; }
+
+/* ===== JOBS ===== */
+.job { margin-bottom: 16px; }
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.job-company {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.job-period {
+  font-size: 10px;
+  color: var(--subtle);
+  white-space: nowrap;
+}
+
+.job-content { font-size: 10.5px; line-height: 1.65; color: #333; }
+.job-content p  { margin-bottom: 4px; }
+.job-content ul { padding-left: 16px; margin: 4px 0; }
+.job-content li { margin-bottom: 3px; }
+.job-content strong { font-weight: 600; color: var(--ink); }
+.job-content a  { color: var(--ink); text-decoration: underline; }
+.job-content a:hover { opacity: 0.7; }
+.job-content h4 { font-size: 10.5px; font-weight: 600; color: var(--ink); margin: 6px 0 2px; }
+
+/* ===== TAGS ===== */
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 7px;
+}
+
+.tag {
+  font-size: 9px;
+  font-weight: 500;
+  color: #333;
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  padding: 2px 7px;
+  border-radius: 2px;
+}
+
+/* ===== SKILL BARS (side) ===== */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-name {
+  font-size: 9.5px;
+  color: #333;
+  width: 108px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skill-bar-wrap {
+  flex: 1;
+  height: 4px;
+  background: var(--bar-bg);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: var(--bar-fill);
+  border-radius: 2px;
+}
+
+/* ===== MISC ===== */
+.update-info { font-size: 9.5px; color: var(--subtle); line-height: 1.6; }
+a { color: var(--ink); text-decoration: none; }
+
+.avoid-break { break-inside: avoid; page-break-inside: avoid; }
+
+/* ===== PRINT ===== */
 @media print {
-    :root {
-        --bs-body-color: #000;
-    }
-
-    body {
-        font-size: 0.7rem;
-        background: white;
-    }
-
-    a {
-        text-decoration: underline;
-    }
-
-    .page {
-        min-width: 100%;
-    }
-
-    .screen {
-        display: none;
-    }
-
-    .card {
-        border: none !important;
-        border-left: 2px solid #1a8a8a !important;
-    }
-
-    .card-body {
-        padding: 0;
-    }
-
-    .badge {
-        border: 0.07rem solid #1a8a8a;
-        color: #1a8a8a !important;
-        background-color: transparent !important;
-    }
-
-    h2 {
-        color: #1a8a8a !important;
-    }
-
-    .col-print-1 {
-        flex: 0 0 8.333333%;
-        max-width: 8.333333%;
-    }
-
-    .col-print-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .border-print-0 {
-        border-width: 0 !important;
-    }
-
-    .pb-print-0 {
-        padding-bottom: 0 !important;
-    }
-
-    .mb-print-1 {
-        margin-bottom: 1rem !important;
-    }
+  body { font-size: 10px; background: white; }
+  .page { max-width: 100%; padding: 0; }
+  .screen { display: none !important; }
+  .col-side { width: 185px; }
 }
 
+/* ===== SCREEN ===== */
 @media not print {
-    .page {
-        padding: 2rem;
-    }
+  .print { display: none; }
 
-    .print {
-        display: none;
-    }
+  body { background: #f0f0f0; }
 
-    h2 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    dt {
-        font-weight: 600;
-    }
-
-    strong {
-        font-weight: 600;
-        color: #1a1a2e;
-    }
+  .page {
+    background: white;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    border-radius: 4px;
+    margin: 2rem auto;
+  }
 }
 
-@page {
-    size: auto;
-    margin: 10mm;
-}
+@page { size: A4; margin: 14mm; }
