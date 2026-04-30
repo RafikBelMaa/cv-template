@@ -1,107 +1,113 @@
 module.exports = {
   name: 'Rafik BELHADJINE',
-  title: 'Développeur Back-end PHP / Symfony / Laravel',
+  title: 'Développeur Back-end PHP / Symfony · Laravel · API REST',
   facts: {
-    'Localisation': '<i class="fa fa-map-marker-alt fact-icon"></i>IDF / PACA / Remote',
-    'Email':        '<a href="mailto:belhadjinerafik@gmail.com"><i class="fa fa-envelope fact-icon"></i>belhadjinerafik@gmail.com</a>',
-    'Téléphone':    '<i class="fa fa-phone fact-icon"></i>06 95 82 60 36',
-    'GitHub':       '<a href="https://github.com/RafikBelMaa"><i class="fa-brands fa-github fact-icon"></i>github.com/RafikBelMaa</a>',
-    'LinkedIn':     '<a href="https://linkedin.com/in/rafik-belhadjine"><i class="fa-brands fa-linkedin fact-icon"></i>linkedin.com/in/rafik-belhadjine</a>',
+    'Localisation': 'Paris / Île-de-France / PACA',
+    'Email':    '<a href="mailto:belhadjinerafik@gmail.com">belhadjinerafik@gmail.com</a>',
+    'GitHub':   '<a href="https://github.com/RafikBelMaa">github.com/RafikBelMaa</a>',
+    'LinkedIn': '<a href="https://linkedin.com/in/rafik-belhadjine">linkedin.com/in/rafik-belhadjine</a>',
   },
 
   skills: [
-    ['PHP 8 / OOP',         90],
-    ['Symfony',             85],
-    ['Laravel',             80],
-    ['MySQL / SQL',         85],
-    ['HTML5 / CSS3',        85],
-    ['JavaScript ES6+',     75],
-    ['Git / GitHub',        85],
-    ['SOLID / Clean Code',  85],
-    ['PHPUnit',             65],
-    ['WordPress',           75],
-    ['Algorithmes',         80],
-    ['Anglais B2/C1',       75],
+    ['PHP 8 / OOP',        90],
+    ['Symfony',            85],
+    ['Laravel',            85],
+    ['MySQL / SQL',        85],
+    ['API REST',           80],
+    ['NativePHP',          75],
+    ['Git / GitHub',       85],
+    ['SOLID / Clean Code', 85],
+    ['Linux / VPS',        75],
+    ['PHPUnit',            65],
+    ['JavaScript ES6+',    70],
+    ['Anglais B2/C1',      75],
   ],
 
   intro: `
-Développeur back-end PHP/Symfony en reconversion réussie, passionné par la qualité logicielle et l'apprentissage continu.
-Après un Titre Pro Développeur Web à l'AFPA, j'ai investi personnellement dans le **Coding Accelerator** — une formation intensive centrée sur les algorithmes avancés, le Clean Code et la revue de code.
+Développeur back-end PHP spécialisé en Symfony et Laravel — architecture MVC, Doctrine ORM, API REST, tests PHPUnit.
+**7 projets construits from scratch** : e-commerce Sylius multi-canaux, messagerie temps réel Mercure (SSE), applications mobiles NativePHP iOS/Android, déploiement VPS (Nginx, PHP-FPM, SSL).
 
-**56 exercices PHP documentés sur GitHub** (DFS/backtracking, Newton-Raphson, Shunting Yard, QuickSort...) — c'est mon engagement concret envers la rigueur technique.
-Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. Disponible immédiatement.
+Formation Coding Accelerator en cours : **56 exercices algorithmiques** sans fonctions natives (QuickSort, DFS, Newton-Raphson, Shunting Yard).
+Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. **Disponible immédiatement.**
 `,
 
   positions: [
     {
-      title: 'Coding Accelerator — Formation intensive PHP/Bash',
-      period: '2025 – présent',
-      skills: ['PHP', 'Algorithmes', 'Clean Code', 'Bash'],
+      title: 'Développeur Web — Stage',
+      period: '2024 – 2025',
+      skills: ['Symfony', 'Mercure/SSE', 'JWT', 'JavaScript'],
       contents: `
-Formation avancée centrée sur les algorithmes, l'optimisation et la revue de code.
+**Association** *(mission dans le cadre de l'AFPA)*
 
-**56 exercices progressifs PHP + Bash** implémentés sans librairies natives :
-- **DFS / Backtracking** — Solveur de Sudoku
-- **Newton-Raphson** — Calcul de racine carrée
-- **Shunting Yard** — Calculatrice avec priorité d'opérateurs et parenthèses
-- **QuickSort, Merge Sort, Bubble Sort** — Algorithmes de tri
-- **Fibonacci, Nombres premiers, Pattern matching 2D, Tokenizers, Closures PHP**
+Intégration d'un module de chat en temps réel dans un site associatif Symfony existant, sans documentation disponible.
 
-Code structuré en modules (Utilitaire / Erreurs / Parsing / Résolution), docblocks complets, validation stricte des entrées CLI.
+- **Défi :** site en production, aucune doc technique — compréhension de l'architecture existante requise avant modification.
+- **Solution :** mise en place de Mercure (SSE) — configuration du hub, publication depuis le contrôleur, abonnement JS natif côté client.
+- **Blocage résolu :** désalignement entre le secret JWT du hub et celui de l'app Symfony — résolution autonome par audit des tokens.
+`
+    },
+    {
+      title: 'Coding Accelerator — Algorithmique & Clean Code',
+      period: '2025 – présent',
+      skills: ['PHP', 'Bash', 'Algorithmes', 'Clean Code'],
+      contents: `
+Formation intensive, financée sur fonds propres.
+
+**56 exercices progressifs PHP + Bash** sans librairies natives :
+- DFS / Backtracking — Solveur de Sudoku
+- Newton-Raphson — Calcul de racine carrée
+- Shunting Yard — Calculatrice avec priorité d'opérateurs
+- QuickSort, Merge Sort, Bubble Sort — Algorithmes de tri
+- Pattern matching 2D, Tokenizers, Closures PHP, Fonctions d'ordre supérieur
 
 GitHub : [Feu](https://github.com/RafikBelMaa/Feu) | [Air](https://github.com/RafikBelMaa/ca_epreuve_air) | [Eau](https://github.com/RafikBelMaa/ca_epreuve_eau) | [Terre](https://github.com/RafikBelMaa/ca_epreuve_terre) | [Bash](https://github.com/RafikBelMaa/ca_shellscripts)
 `
     },
     {
-      title: 'AFPA — Titre Professionnel Développeur Web et Web Mobile',
+      title: 'AFPA — Titre Professionnel Développeur Web (Bac+2)',
       period: '2024 – 2025',
-      skills: ['PHP', 'Symfony', 'Laravel', 'MySQL', 'JavaScript', 'PHPUnit'],
+      skills: ['PHP', 'Symfony', 'Laravel', 'Sylius', 'MySQL', 'PHPUnit'],
       contents: `
-Formation complète avec projets pratiques de bout en bout :
+Projets pratiques de bout en bout :
 
-- **Symfony + Mercure** — Refactorisation d'un site associatif avec notifications temps réel (SSE), architecture services/events, SOLID
-- **E-commerce Sylius/Symfony** — Boutique modulaire, thème custom, pipeline de commande complet
-- **E-commerce Laravel/MySQL** — Catalogue, panier, tunnel de commande, tests PHPUnit sur les cas critiques
-- **Plateforme de réservation PHP** — Gestion des créneaux, inscriptions, confirmations email automatisées
-- **Outil collaboratif Laravel** — Gestion de tâches et projets, rôles utilisateurs, notifications
-- **Site vitrine WordPress** — Thème PHP entièrement custom, hooks, shortcodes, responsive
+- **Boutique e-commerce (Sylius/Symfony)** — Catalogue produit avec variantes, gestion multi-canaux, gateway de paiement sandbox. Substitution d'entités Sylius + configuration Doctrine ORM custom.
+- **E-commerce (Laravel/MySQL)** — Panier persistant, tunnel de commande, middleware de fusion panier invité/utilisateur au login.
+- **Plateforme de réservation (PHP/MySQL)** — Transactions avec \`SELECT FOR UPDATE\` pour prévenir les doubles réservations concurrentes.
+- **Outil collaboratif (Laravel)** — Rôles admin/membre, notifications scoped par projet via Eloquent.
+- **Site associatif (Symfony)** — Extraction progressive de controllers monolithiques vers services dédiés + pattern Repository.
 `
     },
   ],
 
   softSkills: [
-    ['Adaptabilité',         90],
-    ['Travail en équipe',    85],
-    ['Autonomie',            90],
-    ['Gestion du stress',    80],
     ['Apprentissage rapide', 95],
-    ['Communication',        80],
+    ['Autonomie',            90],
     ['Rigueur',              90],
+    ['Adaptabilité',         90],
     ['Curiosité technique',  95],
+    ['Travail en équipe',    85],
+    ['Communication',        80],
+    ['Gestion du stress',    80],
   ],
 
   experience: [
     {
-      header: 'Projets personnels en cours',
-      skills: ['Sylius', 'PHP natif', 'SEO', 'Automatisation'],
+      header: 'Projets Personnels',
+      skills: ['NativePHP', 'Laravel', 'Astro', 'WordPress', 'VPS Linux'],
       contents: `
-En parallèle de mes formations, je développe des projets pour explorer de nouvelles compétences :
-
-- **Sylius** — Approfondissement du framework e-commerce Symfony
-- **Application PHP natif** — Architecture sans framework pour comprendre les fondamentaux
-- **SEO technique** — Optimisation on-page, performance web, structured data
-- **Automatisation** — Scripts bash, workflows automatisés, outils CLI
+- **Application mobile techniciens (NativePHP/Laravel — iOS/Android)** — Listing de chantiers, itinéraire optimisé (nearest neighbor), fonctionnel hors connexion. Conçu pour des techniciens itinérants.
+- **Application mobile événements (NativePHP/Laravel — iOS)** — Création/gestion d'événements, invitations, notifications, déployée sur device physique.
+- **Déploiement VPS de A à Z** — Nginx, PHP-FPM, MySQL, SSL, DNS. Intégration d'[EasyAppointments](https://github.com/alextselegidis/easyappointments) (PHP open source) dans un site Astro statique.
+- **Site vitrine (WordPress)** — Thème enfant custom, Custom Post Types, blocs Gutenberg sur mesure pour un artisan pâtissier.
 `
     },
     {
-      header: 'Expériences professionnelles antérieures',
-      skills: ['Adaptabilité', 'Gestion de stress', 'Travail en équipe'],
+      header: 'Expériences Professionnelles Antérieures',
+      skills: ['Adaptabilité', 'Gestion de stress', 'Contact client'],
       contents: `
-Avant ma reconversion dans le développement web, j'ai exercé plusieurs métiers qui ont forgé mes soft skills :
-
-- **Gardien d'équipements sportifs — Mairies** *(2023–2024)* — Accueil, gestion de planning, coordination, maintenance
-- **Chauffeur Livreur — Pharmacie** *(2022–2023)* — Logistique, respect des délais, gestion des urgences
-- **Éducateur / Surveillant de nuit — Intérim** *(2016–2022)* — Gestion de situations complexes, travail en équipe pluridisciplinaire, calme sous pression
+- **Gardien d'équipements sportifs — Mairies** *(2023–2024)* — Accueil, planning, maintenance.
+- **Chauffeur Livreur — Pharmacie** *(2022–2023)* — Logistique, déplacements IDF, gestion des urgences. Permis B.
+- **Éducateur / Surveillant de nuit — Intérim** *(2016–2022)* — Gestion de situations complexes, travail en équipe pluridisciplinaire.
 `
     },
     {
