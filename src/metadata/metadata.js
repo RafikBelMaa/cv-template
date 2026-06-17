@@ -9,23 +9,26 @@ module.exports = {
   },
 
   skills: [
-    ['PHP 8 / OOP',        90],
-    ['Symfony',            85],
-    ['Laravel',            85],
-    ['MySQL / SQL',        85],
-    ['API REST',           80],
-    ['NativePHP',          75],
-    ['Git / GitHub',       85],
-    ['SOLID / Clean Code', 85],
-    ['Linux / VPS',        75],
-    ['PHPUnit',            65],
-    ['JavaScript ES6+',    70],
-    ['Anglais B2/C1',      75],
+    ['PHP 8 / OOP',          90],
+    ['Symfony',              85],
+    ['Laravel',              85],
+    ['Livewire',             70],
+    ['Eloquent ORM / N+1',   80],
+    ['MySQL / SQL / SQLite', 85],
+    ['API REST',             80],
+    ['NativePHP',            75],
+    ['Stripe Checkout',      65],
+    ['Git / GitHub',         85],
+    ['SOLID / Clean Code',   85],
+    ['Linux / VPS',          75],
+    ['PHPUnit',              65],
+    ['JavaScript ES6+',      70],
+    ['Anglais B2/C1',        75],
   ],
 
   intro: `
-Développeur back-end PHP spécialisé en Symfony et Laravel — architecture MVC, Doctrine ORM, API REST, tests PHPUnit.
-**7 projets construits from scratch** : e-commerce Sylius multi-canaux, messagerie temps réel Mercure (SSE), applications mobiles NativePHP iOS/Android, déploiement VPS (Nginx, PHP-FPM, SSL).
+Développeur back-end PHP spécialisé en Symfony et Laravel — architecture MVC, Doctrine & Eloquent ORM, API REST, tests PHPUnit. Solide sur la couche données : modélisation relationnelle et optimisation de requêtes SQL (résolution du problème N+1).
+**8 projets construits from scratch** : e-commerce Sylius multi-canaux, boutique Laravel avec paiement Stripe, messagerie temps réel Mercure (SSE), applications desktop & mobiles NativePHP iOS/Android, automatisation/scraping PHP, déploiement VPS (Nginx, PHP-FPM, SSL).
 
 Formation Coding Accelerator en cours : **56 exercices algorithmiques** sans fonctions natives (QuickSort, DFS, Newton-Raphson, Shunting Yard).
 Profil multidisciplinaire, anglais B2/C1, arabe A2/B1. **Disponible immédiatement.**
@@ -73,7 +76,7 @@ Projets pratiques de bout en bout :
 - **Boutique e-commerce (Sylius/Symfony)** — Catalogue produit avec variantes, gestion multi-canaux, gateway de paiement sandbox. Substitution d'entités Sylius + configuration Doctrine ORM custom.
 - **E-commerce (Laravel/MySQL)** — Panier persistant, tunnel de commande, middleware de fusion panier invité/utilisateur au login.
 - **Plateforme de réservation (PHP/MySQL)** — Transactions avec \`SELECT FOR UPDATE\` pour prévenir les doubles réservations concurrentes.
-- **Outil collaboratif (Laravel)** — Rôles admin/membre, notifications scoped par projet via Eloquent.
+- **Outil collaboratif (Laravel)** — Rôles admin/membre, relations \`belongsToMany\`, notifications scoped par projet et chargement optimisé (\`with()\`, anti N+1).
 - **Site associatif (Symfony)** — Extraction progressive de controllers monolithiques vers services dédiés + pattern Repository.
 `
     },
@@ -93,10 +96,12 @@ Projets pratiques de bout en bout :
   experience: [
     {
       header: 'Projets Personnels',
-      skills: ['NativePHP', 'Laravel', 'Astro', 'WordPress', 'VPS Linux'],
+      skills: ['NativePHP', 'Laravel', 'Livewire', 'Stripe', 'cURL', 'Astro', 'WordPress', 'VPS Linux'],
       contents: `
-- **Application mobile techniciens (NativePHP/Laravel — iOS/Android)** — Listing de chantiers, itinéraire optimisé (nearest neighbor), fonctionnel hors connexion. Conçu pour des techniciens itinérants.
+- **Application desktop & mobile techniciens (NativePHP/Laravel — iOS/Android)** — Listing de chantiers, itinéraire optimisé (nearest neighbor), fonctionnel hors connexion. **Base SQLite embarquée** + traitements asynchrones (Jobs/Queues). Conçu pour des techniciens itinérants.
 - **Application mobile événements (NativePHP/Laravel — iOS)** — Création/gestion d'événements, invitations, notifications, déployée sur device physique.
+- **Boutique e-commerce sur mesure (Laravel/Livewire/Stripe)** — Paiement **Stripe Checkout** avec webhook ; décrément de stock concurrent via \`lockForUpdate\` (anti-survente). Template duplicable, SEO pensé dès la conception.
+- **Scraper & automatisation (PHP/cURL/regex)** — Authentification par cookie de session, extraction par expressions régulières, téléchargement en **streaming disque** (\`CURLOPT_FILE\`) pour gros fichiers sans saturer la mémoire.
 - **Déploiement VPS de A à Z** — Nginx, PHP-FPM, MySQL, SSL, DNS. Intégration d'[EasyAppointments](https://github.com/alextselegidis/easyappointments) (PHP open source) dans un site Astro statique.
 - **Site vitrine (WordPress)** — Thème enfant custom, Custom Post Types, blocs Gutenberg sur mesure pour un artisan pâtissier.
 `
